@@ -1,0 +1,205 @@
+---
+title: "Principles of SDM"
+format: docx
+bibliography: references.bib
+execute:
+  echo: false
+  warning: false
+---
+
+Working title: Practical application of salmon data mobilization principles
+
+# Outline
+
+## Overview
+
+Focus on NE Pacific. Use salmon as exemplar but indicate relevancy to other fisheries or ecosystem based survey data. Impetus is need for integrated regional and freshwater/marine salmon data.
+
+Focus is on communicating some basic principles for SDM; creating a roadmap (theoretical applications) to applying SDM principles for individuals and salmon data holding organizations looking to modernizing their data infrastructure to create FAIR data by recommending specific platforms, technologies, templates, and processes. Applying the roadmap to a case-study (CAP) to modernize a data system, mobilize a collection of well-curated data, and demonstrate new capabilities in discovering, integrating, and analyzing newly mobilized data.
+
+Section 1: SDM Principles Section 2: Applying SDM Principles to Solve Challenges Faced by Individual Scientist and Organizationally Section 3: Case Study: SDM Principles Applied to Coordinated Assessment Program Data? - Success for section 3: Functional cases that others can apply. Toy example using freshwater and marine data.
+
+## Important questions/points raised in email and discussion:
+
+Here are some comments and points raised by each contributor thus far that align with and inform the overall vision of this work.
+
+Jen:
+
+-   "In our community, we don't really see adoption of existing standards such as Darwin Core but if that were to change, maybe it would make it easier for the 'federating' concept to work. If so, is there something we can do to make this change happen?"
+-   "What changes are needed to enable data citations? metadata (including protocol) citations?"
+-   "none of the state agencies and Tribes in the Columbia Basin who are definitely producing a lot of data make the Top 10 (salmon data producers). What could be done to change this figure in say, 5 years?"
+
+Nancy:
+
+-   What is preventing data from being discoverable by larger international organizations?
+-   Recommend how to make PSMFC data discoverable
+-   Use data sysytems of different scales and make recommendations to make them discoverable
+-   Showcase how organizations have made their data discoverable
+
+Tom:
+
+-   Focus on how to achieve conceptual overview of SDM outlined in Diack et al
+-   Overarching premise: Salmon recovery needs a shift towards ecosystem thinking and corresponding capacity to bring data and knowledge to bear at both broad and fine scales.
+-   "the future is in harnessing and making sense distributed data collections."
+
+Scott:
+
+-   Challenge is to implement SDM
+-   Need strategic plan for how to: - share datasets and code - implement standards for datasets - track provenance
+-   Focus on rewards to end users
+-   Engage early adopters for case studies
+-   Think about providing template data dictionaries, changelogs, readme files
+
+Tim:
+
+-   Need examples. Not more theoretical guidelines
+-   **Use cases**, public data set that demonstrate the applied values
+-   Have the principles have the road map and then show how they are applied
+-   Discoverability is but the first step
+-   Cater toward salmon data producers
+-   Narrow the geographic scope
+
+# Literature Review
+
+# Introduction
+
+There exists a mountain of data about salmon, their environment, and abundance yet scientists and managers struggle to understand why or predict when certain populations of salmon decline. Part of the challenge is that salmon have a complicated life history where they are exposed to multiple environments throughout their lives. Some parts of their lives are easier to observe than others and some environments are more complex than others. The challenge is to determine what observations have the most predictive power in each life phase, and then put all those data together to glean a complete and predictive history of the conditions encountered by specific salmon stocks.
+
+However, because salmon cross arbitrary municipal, provincial, and national borders we lack a coordinated approach to aggregating data. Data often are collected using bespoke standards, stored locally, and not shared. Data management is not a trivial task. Therefore, any coordinated approach needs to be lightweight and flexible such that the barrier to adherence is surmountable by individual biologists and fall in line with the basic tenets of FAIR data.
+
+The key to mobilizing salmon data doesn't lie in creating new technologies, new databases, or bespoke data services. Rather, it rests on effectively harnessing and integrating existing ones, ensuring they are user-friendly, supporting their broad adoption, and raising awareness about how to contribute to and use them to effectively address organizational mandates. Adhering to practical principles and adopting modern data-servicing platforms and technologies that solve immediate problems faced by individual biologists and data holding organizations will propel us further faster towards integrating data at the required required than by being distracted by the allure of novel technologies or creating bespoke data servicing platforms. Success hinges on assisting agencies to meet their data publishing mandates. To achieve this, we must address challenges faced by individual biologists and data managers one at a time, providing solutions rooted in practicality and principles that are underpinned by well-adopted global best-practices, and aligning these with existing national mandates. By sticking to the fundamentals outlined below, the salmon research community will be well-positioned to effectively manage, integrate, and harmonize the vast amount of data being produced to understand, predict and manage changes to salmon ecosystems.
+
+# Salmon Data Mobilization Principles
+
+1.  Publish Data
+2.  Respect Indigenous Data Sovereignty
+3.  Create a Data Management Plan (DMP)
+4.  Publish Metadata Records
+5.  Use Persistent Identifiers
+6.  Publish Protocols
+7.  Adopt Domain-specific Data and Metadata Standards
+8.  Promote, Require, and Incentivize Data Publishing
+9.  Promote and Support Reproducible Workflows
+10. **Reuse and Cite Data**
+
+# A Roadmap to Applying SDM Principles for Organizations and Individual Scientists
+
+Here we describe details of each principle and how each can be addressed by two different user-types: 1) Individual scientists with little to no organizational support for data publication, and; 2) Salmon data holding organizations looking to publish FAIR data or modernize their data infrastructure.
+
+Expand on key concepts and terms used in descriptions here first so any one principle can be read and understood after reading this paragraph.
+
+### **Publish Data and Metadata**
+
+Data are a first-class research artifact and an organizational asset that scientists are increasingly being rewarded for by publishing. Biologists need clear guidelines, tools and support to publish data. Institutions can provide clear mandates and resources to publish data. Academic journals can mandate data publication and citation for manuscripts[@cousijn2018].
+
+*Individuals*
+
+Individuals who are publishing a paper may chose to submit the data accompanying the paper to a generalist repository to archive data for posterity, make their data findable, accessible, and reusable. Recommended generalist repositories include [Zenodo](https://zenodo.org/), [Figshare](https://figshare.com/), [Dryad](https://datadryad.org/), and receive a Digital Object Identifier (DOI) for their dataset. Note that these generalist repositories don't enforce any community-derived data standards that would allow data to be interoperable with other datasets.
+
+*Organizations*
+
+Organizations looking to publish data have a few options available to publish data depending on the organizations capacity in terms of software developers and requirements for customization. For large organizations with dedicated software developers looking to implement custom metadata profiles and bespoke data publishing process, hosting a data catalogue such as [GeoNetwork](https://www.geonetwork-opensource.org/) or a [Comprehensive Knowledge Archive Network (CKAN) Catalogue](https://ckan.org/) are both excellent options. These repositories both have nice interfaces for users to find data and can be set up to be harvested and indexed by third parties such as google datasets search, or other data catalogues that may crawl your catalogue looking for specific metadata to harvest and include in their own collections. 
+
+A great real world example of a Geonetwork catalogue is the [Strait of Georgia Data Centre](https://sogdatacentre.ca/) used by the Pacific Salmon Foundation. A few examples of a CKAN catalogue used for salmon data include the [Government of Canada's Open Data Portal](https://open.canada.ca/en/open-data), the [US Government's Open Data](https://data.gov/), and the [Canadian Integrated Ocean Observing System Data Portal](https://catalogue.cioos.ca/.)
+
+Organizations not requiring a high degree of metadata customization or lack resources for a dedicated software developer to self-host a catalogue and archive data may wish to rely on third-party data and metadata publishing platforms.
+
+### **Respect Indigenous Data Sovereignty.**
+
+The rights of indigenous peoples and nations to govern the collection, ownership, and application of their own data is a critical realization on the path to truth and reconciliation. Develop relationships with the nations on whose land you plan to work, practice community-engaged research[@sabatello2022], and apply the CARE principles[@carroll2020].
+
+### **Create a Data Management Plan (DMP)**
+
+A robust DMP is crucial for the effective management of data. Fisheries and Oceans Canada already prescribes this requirement ([**https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5**](https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5)). The Government of Canada's Tri-agency Research Data Management Policy and the Canadian Association of Research Libraries support [DMP Assistant tool](https://assistant.portagenetwork.ca/about_us) can aid in the creation of DMPs.
+
+### **Publish Metadata Records**
+
+Metadata records can be published on platforms like Open Canada Data Portal, the Canadian Integrated Ocean Observing System, the Global Biodiversity Information Facility and generalist repositories such as Dryad, Figshare and Zenodo. So long as the metadata catalogue mints Digital Object Identifiers and uses modern technologies that allow metadata to be indexed and harvested, such as [Science on Schema.org](https://doi.org/10.5281/zenodo.7872383), or [OAI-PMH](https://www.openarchives.org/pmh/) then data can be harvested from a wide array of sources and integrated into a bespoke collection.
+
+### **Use Persistent Identifiers**
+
+Perisistent idenUse persistent Identifiers (PIDs) to link together research elements and ensure they can be found far into the fute. Mint Digital Object Identifiers (DOIs) for datasets or every other type of research output. , [Open Research and Contributor ID (ORCIDs)](https://orcid.org/) for individuals, and [Research Organization Registry RORs](https://ror.org/) for organizations can ensure precise, persistent and identification.
+
+Scientific Organizations can join a regional [DataCite Consortium](https://support.datacite.org/v1.3/docs/datacite-consortia) if they wish to mint their own DOIs at a discounted rate. This offers a high degree of customization for institutions that would develop their own applications to archive or catalogue data using DataCite's Application Programming Interface. Datacite also offers a graphical user interface ([DataCite Fabrica](https://doi.datacite.org/)) that only requires filling out a form to create a DOI. While this method can be time intensive their is a low barrier to entry. Keep in mind there still needs to be a landing page created for the DOI to point users to, as well as an archive location for the data.
+
+There are however, numerous pre-built solutions that can create a landing page, archive data, and mint a DOI organizations or rely on free services such as [zenodo](https://zenodo.org/). Moreover, the nascent [PID graph](https://doi.org/10.1016/j.patter.2020.100180) permits building custom applications or data visualizations that map research networks, connect researchers to projects, and summarize scholarly outputs from various organizations. There is massive infrastructure built to support bibliometrics, data discovery, linking, citation and data re-use using Digital Object Identifiers. This has to be a key component of salmon data mobilization.
+
+### **Publish Protocols**
+
+The publication of protocols ensures uniformity in data collection and analysis. Several platforms exist to publish protocols for which a Digital Object Identifier can be used: [Nature Portfolio's Protocol Exchange](https://protocolexchange.researchsquare.com/), [protocol.io](https://www.protocols.io/plans/academia), or simply using GitHub to host versions of protocols (DOIs can be assigned via the [Zenodo Integration](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content))
+
+### **Adopt Domain-specific Data and Metadata Standards**
+
+Implementing domain-specific data and metadata standards, such as Darwin Core for biological data and Climate Forecast Conventions for oceanographic data, ensures uniformity and compatibility across data sets. For primary biodiversity data, the Canadian Journal of Aquatic Fisheries Sciences *already* strongly advocates for all species distribution records to be deposited in publicly accessible databases like the Global Biodiversity Information Facility (GBIF) ([**www.gbif.org**](http://www.gbif.org/)), and the Ocean Biogeographic Information System (OBIS, [**http://www.iobis.org/**](http://www.iobis.org/)) for marine biodiversity data.
+
+### **Promote and Incentivize Data Publishing**:
+
+Encourage the scientific community to publish their data by offering incentives, rewards, and institutional recognition.
+
+### **Promote and Support Reproducible Workflows**
+
+Implement practices that ensure reproducibility of scientific workflows. This can be achieved by versioning data, code, and computational environments, and using workflow management systems that ensure the same computational procedure will yield the same result over time. This fosters trust, enables validation, and promotes the reuse of scientific workflows. Researchers should provide clear and comprehensive documentation of their workflows, including code, data, and tools used, to support reproducibility by others in the scientific community. Institutions should provide training on these emergent skills and best-practices.
+
+GitHub can support reproducible science [@braga2023]
+
+### **Reuse and Cite Data**
+
+Promote the reuse of data, leveraging the vast amount of existing information for new research and reduce duplication of efforts. Any reused data should be properly cited using its digital object identifier (DOI). This practice will ensure due acknowledgement to the original data creators and promote transparency, ethical data usage, and credit for the data provider. Progressive academic journals are already taking this approach following 'a data citation roadmap for scientific publishers' [@cousijn2018a]
+
+## Who's already publishing salmon data?
+
+Let's look through the datasets registered with DataCite that have the word salmon somewhere in their DOI's metadata. To do this I will use DataCite's REST API and the R package `rdatacite` which provides convenient functions for making API calls.
+
+```{r, warning = FALSE, message=FALSE}
+library(rdatacite)
+library(tidyverse)
+
+
+# Fetch top ten providers of datasets with the word salmon somewhere in the DOI metadata
+tt_salmon_datasets <- dc_dois(query = "salmon")
+
+tt_providers <- tt_salmon_datasets[["meta"]][["providers"]]
+
+ggplot(tt_providers, aes(x = reorder(title, count), y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(x = "Publisher", y = "Count") +
+  theme_minimal() +
+  ggtitle("Top Ten Publishers of Salmon Datasets")
+  
+```
+
+```{r, warning = FALSE, message=FALSE}
+library(tidyverse)
+
+tt_affiliations <- tt_salmon_datasets[["meta"]][["affiliations"]]
+
+ggplot(tt_affiliations, aes(x = reorder(title, count), y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(x = "Institutions", y = "Count") +
+  theme_minimal() +
+  ggtitle("Top Ten Institutions Providing Salmon Datasets")
+
+```
+
+```{r, warning = FALSE, message=FALSE}
+library(tidyverse)
+
+years_published <- tt_salmon_datasets[["meta"]][["published"]]
+
+ggplot(years_published, ggplot2::aes(x = id, y = count))+
+                   geom_bar(stat = "identity", fill = "steelblue")+
+                   labs(x = "Year", y = "Count") +
+                   coord_flip() +
+                   theme_minimal() +
+                   ggtitle("Growth of salmon datasets published with a DOI")
+```
+
+# Case Study
+
+# Conclusion
+
+The process of aggregating and understanding salmon data has historically been fraught with difficulties due to the complicated life history of the species and the geographical and political boundaries that often hamper a coordinated approach. The need of the hour is a simplified, flexible, and coordinated strategy that is easy to implement and adheres to the FAIR principles. The effective mobilization of salmon data does not hinge on the creation of new technologies. Rather, the emphasis should be on the active communication, coordination, and implementation of existing technologies, ensuring they are easy to use and their use is mandated. The ten strategic points delineated here present a holistic roadmap towards this objective. With concerted efforts and strategic implementation of these proposed strategies, salmon science may be able to enter the fourth scientific paradigm---data intensive scientific discoveries.
+
+### References
