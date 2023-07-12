@@ -71,52 +71,53 @@ The key to mobilizing salmon data doesn't lie in creating new technologies, new 
 
 # Salmon Data Mobilization Principles
 
-1.  Publish Data
+1.  Publish Data and Metadata
 2.  Respect Indigenous Data Sovereignty
-3.  Create a Data Management Plan (DMP)
-4.  Publish Metadata Records
-5.  Use Persistent Identifiers
-6.  Publish Protocols
-7.  Adopt Domain-specific Data and Metadata Standards
-8.  Promote, Require, and Incentivize Data Publishing
-9.  Promote and Support Reproducible Workflows
-10. **Reuse and Cite Data**
+3.  Create an Output Management Plan for Your Project
+4.  Use Persistent Identifiers for Research Outputs
+5.  Publish Protocols
+6.  Adopt Domain-specific Data and Metadata Standards
+7.  Promote, Incentivize and Require Data Publishing
+8.  Promote and Support Reproducible Workflows
+9.  Reuse and Cite Data
 
 # A Roadmap to Applying SDM Principles for Organizations and Individual Scientists
 
-Here we describe details of each principle and how each can be addressed by two different user-types: 1) Individual scientists with little to no organizational support for data publication, and; 2) Salmon data holding organizations looking to publish FAIR data or modernize their data infrastructure.
+Here we describe details of each principle and how each can be addressed by two different user-types: 1) Individual scientists with little to no organizational support for data publication, and; 2) Salmon data holding organizations looking to publish data or modernize their data infrastructure.
 
-Expand on key concepts and terms used in descriptions here first so any one principle can be read and understood after reading this paragraph.
+TODO: Expand on key concepts and terms used in descriptions here first so any one principle can be read and understood after reading this paragraph. Ie. define FAIR data, metadata, persistent identifiers, reproducibility. Define what is meant by salmon data (ie. spanning individual fish measurements and counts all the way to environmental conditions thought to affect salmon). Describe how their is currently no complete and widely accepted salmon data dictionary.
 
 ### **Publish Data and Metadata**
 
-Data are a first-class research artifact and an organizational asset that scientists are increasingly being rewarded for by publishing. Biologists need clear guidelines, tools and support to publish data. Institutions can provide clear mandates and resources to publish data. Academic journals can mandate data publication and citation for manuscripts[@cousijn2018].
+Data are a first-class research artifact and an organizational asset that scientists are increasingly being rewarded for by publishing. Through the process of publishing data, a metadata record is often created. A metadata record is usually a web-page in a data catalogue that provides a summary and description of the dataset using specific metadata fields and a link to download the data. A standard .xml file that structures metadata in a machine readable way is also provided in a metadata record.
+
+Biologists need clear guidelines, tools and support to publish data and metadata. Institutions can provide clear mandates and resources to publish data and metadata. Academic journals can mandate data publication and citation for manuscripts[@cousijn2018].
 
 *Individuals*
 
-Individuals who are publishing a paper may chose to submit the data accompanying the paper to a generalist repository to archive data for posterity, make their data findable, accessible, and reusable. Recommended generalist repositories include [Zenodo](https://zenodo.org/), [Figshare](https://figshare.com/), [Dryad](https://datadryad.org/), and receive a Digital Object Identifier (DOI) for their dataset. Note that these generalist repositories don't enforce any community-derived data standards that would allow data to be interoperable with other datasets.
+Individuals who are publishing a peer-reviewed journal article may choose to submit the data accompanying the paper to a generalist repository. This is an important practice that archives data for posterity and allows a greater degree of trust in the paper's results by reproducing and auditing the analyses. Recommended generalist repositories include [Zenodo](https://zenodo.org/), [Figshare](https://figshare.com/), [Dryad](https://datadryad.org/). By publishing a dataset to one of these repositories authors will receive a Digital Object Identifier (DOI) for their dataset and making the data findable, accessible, reusable and preserved as a first-class research artifact.
+
+Note that these generalist repositories don't enforce any community-derived data standards that would esnure data are interoperable with other datasets. For datasets that are stand-alone time series data of an important metric, or suite of related metrics, individual scientists ought to consider publishing data to a domain-specific repository that enforces some data standardization which is covered in principle six: "Adopt Domain-specific Data and Metadata Standards".
 
 *Organizations*
 
-Organizations looking to publish data have a few options available to publish data depending on the organizations capacity in terms of software developers and requirements for customization. For large organizations with dedicated software developers looking to implement custom metadata profiles and bespoke data publishing process, hosting a data catalogue such as [GeoNetwork](https://www.geonetwork-opensource.org/) or a [Comprehensive Knowledge Archive Network (CKAN) Catalogue](https://ckan.org/) are both excellent options. These repositories both have nice interfaces for users to find data and can be set up to be harvested and indexed by third parties such as google datasets search, or other data catalogues that may crawl your catalogue looking for specific metadata to harvest and include in their own collections. 
+Organizations looking to publish data have a number of options available to publish data depending on requirements and capacity. For large organizations with dedicated software developers looking to implement custom metadata profiles and bespoke data publishing processes, hosting a data catalogue such as [GeoNetwork](https://www.geonetwork-opensource.org/) or a [Comprehensive Knowledge Archive Network (CKAN) Catalogue](https://ckan.org/) are both excellent options. These repositories both have nice interfaces for users to find data and most importantly can be configured to be harvested and indexed by third parties such as google datasets search, or other data catalogues that may crawl your catalogue looking for specific metadata to harvest and include in their own collections.
 
-A great real world example of a Geonetwork catalogue is the [Strait of Georgia Data Centre](https://sogdatacentre.ca/) used by the Pacific Salmon Foundation. A few examples of a CKAN catalogue used for salmon data include the [Government of Canada's Open Data Portal](https://open.canada.ca/en/open-data), the [US Government's Open Data](https://data.gov/), and the [Canadian Integrated Ocean Observing System Data Portal](https://catalogue.cioos.ca/.)
+A great real world example of a Geonetwork catalogue is the [Strait of Georgia Data Centre](https://sogdatacentre.ca/) used by the Pacific Salmon Foundation. A few examples of a CKAN catalogue used for salmon data include the [Government of Canada's Open Data Portal](https://open.canada.ca/en/open-data), the [US Government's Open Data](https://data.gov/), and the [Canadian Integrated Ocean Observing System Data Portal](https://catalogue.cioos.ca/.).
 
-Organizations not requiring a high degree of metadata customization or lack resources for a dedicated software developer to self-host a catalogue and archive data may wish to rely on third-party data and metadata publishing platforms.
+Organizations not requiring a high degree of metadata customization or lack resources for a dedicated software developer to self-host a catalogue and archive data may wish to rely on third-party data and metadata publishing platforms. Several generalist repositories offer Institutional accounts that can be customized with institutional branding or customized metadata schemas for a nominal fee, which is almost certainly faster and more cost effective than hiring a dedicated developer. Dryad Data Repository offers the most comprehensive and up to date features supporting both DataCite and schema.org metadata schemas and is Core Trust Seal certified [@coretrustsealstandardsandcertificationboard2022], ensuring the repository adheres to standards and best-practices across the data management life cyle. To compare features of some of the most popular generalist repositories check out The General Repository Comparison Chart [@stall2023].
 
 ### **Respect Indigenous Data Sovereignty.**
 
 The rights of indigenous peoples and nations to govern the collection, ownership, and application of their own data is a critical realization on the path to truth and reconciliation. Develop relationships with the nations on whose land you plan to work, practice community-engaged research[@sabatello2022], and apply the CARE principles[@carroll2020].
 
-### **Create a Data Management Plan (DMP)**
+### **Create an Output Management Plan for Your Project**
 
-A robust DMP is crucial for the effective management of data. Fisheries and Oceans Canada already prescribes this requirement ([**https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5**](https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5)). The Government of Canada's Tri-agency Research Data Management Policy and the Canadian Association of Research Libraries support [DMP Assistant tool](https://assistant.portagenetwork.ca/about_us) can aid in the creation of DMPs.
+A robust Output Management Plan is crucial for the effective management of the various outputs from scientific investigations. These are often referred to as Data Management Plans, but cover not only the management of data but facilitate a discussion around what outputs a scientific project will produce. Investigators can not only plan where and how they will store, share, and standardize data but also identify planned papers, reports, posters, presentations and datasets. Once those planned outputs are complete, scientists can identify those outputs as completed and provide persistent identifiers to where the outputs are published. This provides an excellent way for researchers to tie together various research outputs and offeres funders a mechanism to review outputs against funded proposals.
 
-### **Publish Metadata Records**
+Fisheries and Oceans Canada already prescribes this requirement ([**https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5**](https://www.dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-eng.html#6-5)). The Government of Canada's Tri-agency Research Data Management Policy and the Canadian Association of Research Libraries support DMP Assistant tool can aid in the creation of DMPs. However, we reccommend the California Digital Libraries DMP Tool (https://dmptool.org) which has the same code base but better features.
 
-Metadata records can be published on platforms like Open Canada Data Portal, the Canadian Integrated Ocean Observing System, the Global Biodiversity Information Facility and generalist repositories such as Dryad, Figshare and Zenodo. So long as the metadata catalogue mints Digital Object Identifiers and uses modern technologies that allow metadata to be indexed and harvested, such as [Science on Schema.org](https://doi.org/10.5281/zenodo.7872383), or [OAI-PMH](https://www.openarchives.org/pmh/) then data can be harvested from a wide array of sources and integrated into a bespoke collection.
-
-### **Use Persistent Identifiers**
+### **Use Persistent Identifiers for Research Outputs**
 
 Perisistent idenUse persistent Identifiers (PIDs) to link together research elements and ensure they can be found far into the fute. Mint Digital Object Identifiers (DOIs) for datasets or every other type of research output. , [Open Research and Contributor ID (ORCIDs)](https://orcid.org/) for individuals, and [Research Organization Registry RORs](https://ror.org/) for organizations can ensure precise, persistent and identification.
 
@@ -197,6 +198,12 @@ ggplot(years_published, ggplot2::aes(x = id, y = count))+
 ```
 
 # Case Study
+
+TODO: Chose a case study that demonstrates how to modernize an organizations data infrastructure and/or mobilize a specific data asset.
+
+Proposed example: [Smolt to Adult Returns from Streamnet's Coordinated Assessment Program HLI.](https://www.streamnet.org/data/hli/?index=2&perpage=10&hli=SAR) Steps: 1) Assess dataset collection against SDM principles outlined, 2) Address relevant deficiencies: get a DOI for datasets (via GBIF?) and protocols, create an output management plan for this data mobilization project (dmptool.org), include recommended citation as column in data file, include DOI as column in data file. Assess where/how to standardize data. Before committing to strategy: investigate feasibility of transforming data to darwin core, requesting/creating new controlled vocabulary terms in NERC Vocabulary Server and publishing dataset on GBIF. If that works: visualize data downloads and citations mediated by GBIF.
+
+Whatever the case study, the focus will be on modernizing infrastructure by adding some steps to reach SDM goals (not reinvent infrastructure). Generate a toy example of analyzing newly mobilized data integrated with some marine data using API and reproducible methods.
 
 # Conclusion
 
