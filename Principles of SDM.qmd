@@ -1,5 +1,5 @@
 ---
-title: "Principles of SDM"
+title: "Practical application of salmon data mobilization principles"
 format: 
   docx:
     reference-doc: scidata-template.docx
@@ -9,8 +9,6 @@ execute:
   echo: false
   warning: false
 ---
-
-Working title: Practical application of salmon data mobilization principles
 
 # Overview of Paper Objectives
 
@@ -152,7 +150,7 @@ Success hinges on assisting agencies to meet their data publishing mandates. To 
 
 Here we describe details of each principle and how each can be addressed by two different user-types: 1) Individual scientists with little to no organizational support for data publication and; 2) Salmon data holding organizations looking to publish FAIR @wilkinson2016 data or modernize their data infrastructure.
 
-TODO: Expand on key concepts and terms used in descriptions here first so any one principle can be read and understood after reading this paragraph. Ie. define FAIR data, metadata, persistent identifiers, reproducibility. Define what is meant by salmon data (ie. spanning individual fish measurements and counts all the way to environmental conditions thought to affect salmon). Describe how their is currently no complete and widely accepted salmon data dictionary.
+TODO: Expand on key concepts and terms used in descriptions here first so any one principle can be read and understood after reading this paragraph. Ie. define FAIR data, metadata, persistent identifiers, reproducibility. Define what is meant by salmon data (ie. spanning individual fish measurements and counts all the way to environmental conditions thought to affect salmon). Describe how there is currently no complete and widely accepted salmon data dictionary.
 
 ### **1. Publish Data and Metadata**
 
